@@ -77,7 +77,7 @@ public class AsyncProcessor {
 
             BigDecimal total = BigDecimal.valueOf(verticalScore + horizontalScore)
                     .setScale(2, BigDecimal.ROUND_HALF_EVEN);
-            LOGGER.info(" Prefix:" + partOfKeyword  + ", horizontalScore: " + horizontalScore + " verticalScore: "+verticalScore+  "total:" + total  );
+            LOGGER.info(" Prefix:" + partOfKeyword  + ", horizontalScore: " + horizontalScore + ", verticalScore: "+verticalScore+  ", total:" + total  );
 
             return total;
         }
