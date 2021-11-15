@@ -82,8 +82,51 @@ verticalCoefficient = 10`
        :  Prefix:iphone charge,  horizontalScore: 3.164835,  verticalScore: 0.035164833, total:3.20
        :  Prefix:iphone charger, horizontalScore: 2.5714285, verticalScore: 0.028571416, total:2.60
 
-       :  Overall score for iphone charger : 90.70
+       :  Overall score for iphone charger : 90.70 
 
+Response : 
+`{
+"score": 82.81,
+"keyword": "iphone charger",
+"result": {
+"success": true,
+"message": "Success!"
+}
+}`
+
+
+
+#### **Let's increase verticalCoefficient to 20**
+
+`curl --location --request GET 'http://localhost:8080/estimate?keyword=iphone charger'`
+
+`horizontalCoefficient = 6
+verticalCoefficient = 20`
+
+       :  Prefix:i,              horizontalScore: 9.142858, verticalScore: 0.18285714, total:9.33
+       :  Prefix:iphon,          horizontalScore: 7.0329676, verticalScore: 0.21098901, total:7.24
+       :  Prefix:iphone cha,     horizontalScore: 4.395604, verticalScore: 0.21978025, total:4.62
+       :  Prefix:iphone ,        horizontalScore: 5.9780216, verticalScore: 0.17934066, total:6.16
+       :  Prefix:ip,             horizontalScore: 8.615384, verticalScore: 0.21538468, total:8.83
+       :  Prefix:ipho,           horizontalScore: 7.56044, verticalScore: 0.22681321, total:7.79
+       :  Prefix:iph,            horizontalScore: 8.087912, verticalScore: 0.24263741, total:8.33
+       :  Prefix:iphone,         horizontalScore: 6.5054946, verticalScore: 0.19516487, total:6.70
+       :  Prefix:iphone ch,      horizontalScore: 4.923077, verticalScore: 0.24615383, total:5.17
+       :  Prefix:iphone c,       horizontalScore: 5.450549, verticalScore: 0.27252752, total:5.72
+       :  Prefix:iphone char,    horizontalScore: 3.868132, verticalScore: 0.19340658, total:4.06
+       :  Prefix:iphone charg,   horizontalScore: 3.340659, verticalScore: 0.16703296, total:3.51
+       :  Prefix:iphone charger, horizontalScore: 2.2857141, verticalScore: 0.11428571, total:2.40
+       :  Prefix:iphone charge,  horizontalScore: 2.8131866, verticalScore: 0.14065933, total:2.95
+       :  Overall score for iphone charger : 82.81
+
+Response : `{
+"score": 82.81,
+"keyword": "iphone charger",
+"result": {
+"success": true,
+"message": "Success!"
+}`
+}
 
 
 ## b. How does your algorithm work?
